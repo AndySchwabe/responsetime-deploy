@@ -1,0 +1,5 @@
+name: 'ResponseTime-Deploy'
+description: 'Deploy ResponseTime'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
