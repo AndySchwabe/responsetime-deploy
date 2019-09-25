@@ -1,7 +1,9 @@
 FROM alpine:3.10
 
 LABEL MAINTAINER="Andy Schwabe" \
-    DOCKER_TAG="responsetime_deploy:latest"
+    DOCKER_TAG="responsetime_deploy:latest" \
+    vcs-url="https://github.com/AndySchwabe/responsetime-deploy" \
+    vcs-ref="$SOURCE_COMMIT"
 
 COPY entrypoint.sh /entrypoint.sh
 
