@@ -31,4 +31,5 @@ teardownfrontends3:
 	aws cloudformation delete-stack --stack-name responsetime-frontend-s3-$(ENVIRONMENT)-$(STACK) --region $(REGION) --profile rtdeploy
 
 .PHONY: teardownfrontend
-teardownfrontend: aws cloudformation delete-stack --stack-name responsetime-frontend-$(ENVIRONMENT)-$(STACK) --region $(REGION) --profile rtdeploy
+teardownfrontend:
+	aws cloudformation delete-stack --stack-name responsetime-frontend-$(ENVIRONMENT)-$(STACK) --region $(REGION) --profile rtdeploy
