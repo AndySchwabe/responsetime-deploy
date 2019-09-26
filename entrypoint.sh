@@ -1,5 +1,7 @@
 #!/bin/sh
 
-#aws s3 cp --recursive
+cd "$GITHUB_WORKSPACE"
+
+ls -alh
 
 echo "$BUCKET"

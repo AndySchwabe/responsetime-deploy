@@ -8,11 +8,11 @@ all:
 
 .PHONY: clean
 clean:
-	teardownfrontend teardownfrontends3
+	teardownfrontend
 
 .PHONY: install
 install:
-	deployfrontends3 uploadfrontend deployfrontends
+	uploadfrontend deployfrontends
 
 .PHONY: deployfrontends3
 deployfrontends3:
