@@ -13,3 +13,5 @@ RUN apk add --upgrade --no-cache python3 make groff \
     && chmod +x /entrypoint.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
+
+CMD ["all"]
